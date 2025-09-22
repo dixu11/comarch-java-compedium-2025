@@ -1,15 +1,18 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Warunki2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
         System.out.println("Jaka jest temperatura w celsjuszach?");
-        int temperature = scanner.nextInt();
+//        int temperature = random.nextInt(10);// 0-9
+        int temperature = random.nextInt(-40,41);// -40 - 40
+        System.out.println("Podano: " + temperature + "C");
         if (temperature > 70 || temperature < -70) {
             System.out.println("Absurdalna temperatura");
             return; //wychodzi z metody
         }
-        System.out.println("Podano: " + temperature + "C");
 
         if (temperature > 25) {
             System.out.println("Jest gorąco");
@@ -18,8 +21,6 @@ public class Warunki2 {
         } else  {
             System.out.println("Jest zimno");
         }
-
-
 
 
         if(temperature>15){
