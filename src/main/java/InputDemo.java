@@ -4,7 +4,6 @@ public class InputDemo {
     public static void main(String[] args) {
         //tworzenie obiektu
         //Typ nazwa = new Typ();
-
         Scanner input = new Scanner(System.in);
         //next,nextLine,nextInt, nextDouble, nextBoolean
         System.out.println("Jak się nazywasz?");
