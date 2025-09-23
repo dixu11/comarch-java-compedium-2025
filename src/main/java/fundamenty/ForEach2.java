@@ -1,3 +1,5 @@
+package fundamenty;
+
 public class ForEach2 {
     public static void main(String[] args) {
         int[] numbers = {34, 456, 567, 345};

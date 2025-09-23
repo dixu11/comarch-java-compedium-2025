@@ -1,3 +1,5 @@
+package fundamenty;
+
 public class Tablice {
     public static void main(String[] args) {
         int number =  10;

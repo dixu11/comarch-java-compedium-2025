@@ -1,3 +1,5 @@
+package fundamenty;
+
 public class FirstProgram {
 
     //pola

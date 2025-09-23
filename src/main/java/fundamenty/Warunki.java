@@ -1,3 +1,5 @@
+package fundamenty;
+
 import java.util.Scanner;
 
 public class Warunki {

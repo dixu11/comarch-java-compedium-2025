@@ -1,3 +1,5 @@
+package fundamenty;
+
 import java.math.BigDecimal;
 
 public class Sklep {
