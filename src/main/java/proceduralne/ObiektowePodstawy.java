@@ -2,7 +2,7 @@ package proceduralne;
 
 import java.util.Random;
 
-public class MetodyObiektowe {
+public class ObiektowePodstawy {
     public static void main(String[] args) {
         Random random = new Random();
         int number = random.nextInt(1, 10);
@@ -14,6 +14,7 @@ public class MetodyObiektowe {
         Product product2 = new Product();
         product2.nazwa = "stary rower";
         product2.cena = 400;
+       // product2.cena = 500;
 
         /*System.out.println("Produkt o nazwie : " + product.nazwa);
         System.out.println("Ma cenę : " + product.cena);
