@@ -1,4 +1,4 @@
-package proceduralne;
+package obiektowe;
 
 import java.util.Random;
 
@@ -37,7 +37,5 @@ public class ObiektowePodstawy {
         }
 
         System.out.println("Łączna cena wynosi: " + sumaCeny);
-
-
     }
 }

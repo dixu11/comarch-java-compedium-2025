@@ -1,4 +1,4 @@
-package proceduralne;
+package obiektowe;
 
 public class Product {
     //cechy/zmienne/pola(zmienne w obiekcie)
