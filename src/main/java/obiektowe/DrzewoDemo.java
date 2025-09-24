@@ -8,7 +8,7 @@ public class DrzewoDemo {
 //        drzewo1.iglaste = false;
 //        drzewo1.wysokoscMetry = 45.512354;
         Drzewo drzewo2 = new Drzewo( "jodła",true, 34.456432);
-        //drzewo2.nazwa = "jodła";
+ //       drzewo2.nazwa = "jodła";
 //        drzewo2.iglaste = true;
 //        drzewo2.wysokoscMetry = 34.456432;
 
@@ -20,3 +20,6 @@ public class DrzewoDemo {
 
     }
 }
+
+//enkapsulacja/hermetyzacja - z obiektem komunikujemy się wyłącznie przez jego metody, stan(pola) są całkowicie ukryte
+

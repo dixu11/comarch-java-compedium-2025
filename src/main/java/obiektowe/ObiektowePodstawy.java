@@ -8,12 +8,12 @@ public class ObiektowePodstawy {
         int number = random.nextInt(1, 10);
         System.out.println(number);
 
-        Product product1 = new Product();
-        product1.nazwa = "nowy rower";
-        product1.cena = 1200;
-        Product product2 = new Product();
-        product2.nazwa = "stary rower";
-        product2.cena = 400;
+        Product product1 = new Product( 1200,"nowy rower");
+//        product1.nazwa = "nowy rower";
+//        product1.cena = 1200;
+        Product product2 = new Product(400, "stary rower");
+//        product2.nazwa = "stary rower";
+//        product2.cena = 400;
        // product2.cena = 500;
 
         /*System.out.println("Produkt o nazwie : " + product.nazwa);
@@ -33,7 +33,8 @@ public class ObiektowePodstawy {
 
         double sumaCeny = 0;
         for(Product product: products){
-            sumaCeny += product.cena;
+           // sumaCeny += product.cena;
+            sumaCeny += product.getPrice();
         }
 
         System.out.println("Łączna cena wynosi: " + sumaCeny);

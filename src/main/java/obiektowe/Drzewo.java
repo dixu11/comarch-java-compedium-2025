@@ -1,16 +1,22 @@
 package obiektowe;
 
 public class Drzewo {
-    public String nazwa;
-    public boolean iglaste;
-    public double wysokoscMetry;
+    private String nazwa;
+    private boolean iglaste;
+    private double wysokoscMetry;
 
     public Drzewo(String nazwaDrzewa, boolean iglaste, double wysokoscMetry) {
         nazwa = nazwaDrzewa;
         this.iglaste = iglaste;
         this.wysokoscMetry = wysokoscMetry; //ta sama nazwa ale this. dla rozróżnienia co jest na obiekcie
+    }
 
+    public Drzewo() {
+        this("jabłoń",false,5);
+    }
 
+    public Drzewo(boolean iglaste, double wysokoscMetry) {
+        this("jabłoń", iglaste, wysokoscMetry);
     }
 
     public void wyswietl() {
