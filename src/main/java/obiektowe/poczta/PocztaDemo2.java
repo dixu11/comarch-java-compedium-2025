@@ -70,5 +70,12 @@ Wyświetl również łączną cenę wysłania tych paczek. */
         System.out.println(paczka1);
         System.out.println(paczka2);
         System.out.println(poczta);
+
+        System.out.println("---------------------");
+        System.out.println("Tworzenie paczki z poziomu poczty");
+        Paczka paczkaZPoczty = poczta.stworzPaczke();
+        poczta.nadajPaczke(paczkaZPoczty, 20);
+        System.out.println(paczkaZPoczty);
+        System.out.println(poczta);
     }
 }

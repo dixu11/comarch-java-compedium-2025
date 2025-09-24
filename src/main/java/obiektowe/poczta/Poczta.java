@@ -1,5 +1,7 @@
 package obiektowe.poczta;
 
+import java.util.Scanner;
+
 public class Poczta {
 
     private double utarg = 0;
@@ -9,6 +11,37 @@ public class Poczta {
     Jeśli przekazano zbyt małą kwotę ma zwrócić tę kwotę i nie modyfikować stanu paczki.
     Na koniec dodaj do poczty pole “utarg” i dodawaj do niego zarobione przez pocztę pieniądze.
 */
+
+    /*
+    * Dodaj metodę pozwalającą na stworzenie i zwrócenie paczki
+Ma ona zapytać w konsoli o wszystkie parametry paczki i stworzyć ją jako obiekt
+na koniec zwróć utworzoną paczkę
+    * */
+
+   /* Paczka stworzPaczke(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Podaj wagę w gramach:");
+        int waga = scanner.nextInt();
+        scanner.nextLine();
+//        scanner = new Scanner(System.in);
+        System.out.print("Podaj odbiorcę:");
+        String odbiorca = scanner.nextLine();
+        System.out.print("Podaj nadawcę:");
+        String nadawca = scanner.nextLine();
+        return new Paczka(odbiorca,nadawca,waga);
+    }*/
+
+    Paczka stworzPaczke(){
+        BetterScanner scanner = new BetterScanner();
+        int waga = scanner.readNumber("Podaj wagę w gramach:");
+        String odbiorca = scanner.readText("Podaj odbiorcę:");
+        String nadawca = scanner.readText("Podaj nadawcę:");
+        return new Paczka(odbiorca,nadawca,waga);
+    }
+
+
+
+
     double nadajPaczke(Paczka paczka, double kwota){
         if (kwota >= paczka.getPrice()) {
             paczka.setStatus("nadana");
