@@ -1,5 +1,7 @@
 package obiektowe.poczta;
 
+import obiektowe.Status;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -60,7 +62,7 @@ na koniec zwróć utworzoną paczkę
         for (int i = 0; i < listy.length; i++) {
             if (listy[i] == null) {
                 listy[i] = list;
-                list.setStatus("nadany");
+                list.setStatus(Status.NADANA);
                 wyslany = true;
                 break;
             }
@@ -73,7 +75,7 @@ na koniec zwróć utworzoną paczkę
             if (list == null) {
                 break;
             }
-            list.setStatus("wysłany");
+            list.setStatus(Status.WYSLANA);
         }
     }
 
