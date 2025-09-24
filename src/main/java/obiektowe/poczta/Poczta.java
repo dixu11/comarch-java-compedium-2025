@@ -7,8 +7,10 @@ import java.util.Scanner;
 
 public class Poczta {
 
+    public static final int MAX_ILOSC_LISTOW = 10;
+
     private double utarg = 0;
-    private List[] listy = new List[10];
+    private List[] listy = new List[MAX_ILOSC_LISTOW];
   /*  Do poczty dodaj metodę, która pozwoli nam nadawać paczki
     Metoda ma wymagać przekazania paczki oraz kwoty pieniędzy
     Metoda przyjmując paczkę powinna sprawdzić jej cenę, i jeśli zapłacono wystarczającą ilość pieniędzy ma zmienić jej status na “nadana” oraz zwrócić resztę.
