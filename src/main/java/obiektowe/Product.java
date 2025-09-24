@@ -20,4 +20,11 @@ public class Product {
         return cena;
     }
 
+    @Override
+    public String toString() {
+        return "Product{" +
+                "cena=" + cena +
+                ", nazwa='" + nazwa + '\'' +
+                '}';
+    }
 }
