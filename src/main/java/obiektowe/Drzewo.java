@@ -1,6 +1,6 @@
 package obiektowe;
 
-public class Drzewo {
+public class Drzewo{
     private String nazwa;
     private boolean iglaste;
     private double wysokoscMetry;
@@ -51,10 +51,43 @@ public class Drzewo {
         return typ();
     }
 
-
+//DOSTĘPY
     //private - dostęp tylko w klasie
     //(default/package-private) - tylko dla pakietu
     //protected - tylko dla pakietu i klas dziedziczących z innych pakietów
     //public - we wszystkich pakietach
 
+
+    //TO_STRING
+    //każda klasa w javie dziedziczy po Object
+
+   /* public String toString(){
+        return String.format("Drzwo %s typu: %s wysokość: %8.2fm\n",
+                nazwa, typ(), wysokoscMetry);
+    }*/
+
+    @Override//pilnuje czy na pewno zgadza się sygnatura
+    public String toString() {
+        return "Drzewo{" +
+                "nazwa='" + nazwa + '\'' +
+                ", iglaste=" + iglaste +
+                ", wysokoscMetry=" + wysokoscMetry +
+                '}';
+    }
+
+
+    public void setHeight(double newHeight){
+        wysokoscMetry = newHeight;
+    }
+
+    public double getWysokoscMetry() {
+        return wysokoscMetry;
+    }
+
+    public void urosnij(int oIleRosnie) {
+        if (oIleRosnie < 0) {
+            return;
+        }
+        wysokoscMetry += oIleRosnie;
+    }
 }
