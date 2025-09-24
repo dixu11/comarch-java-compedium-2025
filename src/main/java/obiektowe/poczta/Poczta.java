@@ -1,10 +1,12 @@
 package obiektowe.poczta;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Poczta {
 
     private double utarg = 0;
+    private List[] listy = new List[10];
   /*  Do poczty dodaj metodę, która pozwoli nam nadawać paczki
     Metoda ma wymagać przekazania paczki oraz kwoty pieniędzy
     Metoda przyjmując paczkę powinna sprawdzić jej cenę, i jeśli zapłacono wystarczającą ilość pieniędzy ma zmienić jej status na “nadana” oraz zwrócić resztę.
@@ -51,10 +53,35 @@ na koniec zwróć utworzoną paczkę
         return kwota;
     }
 
+
+
+    public boolean wyslij(List list) {
+        boolean wyslany = false;
+        for (int i = 0; i < listy.length; i++) {
+            if (listy[i] == null) {
+                listy[i] = list;
+                list.setStatus("nadany");
+                wyslany = true;
+                break;
+            }
+        }
+        return wyslany;
+    }
+
+    public void wyslijListonosza() {
+        for (List list : listy) {
+            if (list == null) {
+                break;
+            }
+            list.setStatus("wysłany");
+        }
+    }
+
     @Override
     public String toString() {
         return "Poczta{" +
                 "utarg=" + utarg +
+                ", listy=" + Arrays.toString(listy) +
                 '}';
     }
 }

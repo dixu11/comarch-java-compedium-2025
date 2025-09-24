@@ -32,6 +32,34 @@ na koniec zwróć utworzoną paczkę
 
 W mainie spróbuj wykorzystać nową metodę do wytworzenia paczki
 nadaj ją przy pomocy poprzedniej metody do nadawania paczek
+*
+* Adres
+
+Przygotuj nowy typ danych Adres.
+Adres powinien zawierać cechy takie jak: ulica, numer domu oraz kod pocztowy.
+Tworząc obiekt adres należy przekazać wszystkie dane przez konstruktor.
+
+List
+
+Przygotuj typ List.
+List powinien zawierać adres nadawcy, adres odbiorcy oraz może być priorytetowy lub nie.
+Podobnie jak paczka powinien zawierać pole status które domyślnie ustawione jest na “nienadany”.
+Aby stworzyć list należy przekazać adres nadawcy, i adres odbiorcy (jako obiekt typu Adres).
+Przetestuj obiekt typu Adres tworząc  List i wyświetlając go w main.
+
+Dodaj metodę zwracającą cenę listu.
+Jeśli list jest priorytetowy, kosztuje 8,50zł jeśli nie, 6 zł.
+
+Wysyłanie listów
+
+Od teraz każda poczta ma posiadać pustą tablicę listów (pole), do której jest w stanie zmieścić 10 listów.
+
+Przygotuj metodę nadawania listów
+ która będzie działała podobnie do tej nadającej paczki z tym, że jeśli list został poprawnie opłacony powinien trafić na pierwsze wolne miejsce w tablicy
+Jeśli tablica jest pełna metoda powinna wyświetlić, “przepraszamy, poczta jest w stanie wysyłać tylko 10 listów dziennie, i co nam zrobisz?”, chyba, że masz pomysł jak inaczej rozwiązać ten problem :)
+
+Dodaj do poczty możliwość wysłania listonosza
+Metoda ta ma ustawić status wszystkich listów na “wysłany”.
 
 *
 * */
