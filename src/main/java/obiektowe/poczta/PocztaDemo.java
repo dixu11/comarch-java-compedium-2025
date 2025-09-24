@@ -51,9 +51,28 @@ public class PocztaDemo {
 //        System.out.println(pusty4.concat("aaa".toUpperCase()));
 
 
-        Paczka paczka1 = new Paczka(null, "Jola", 10000);
+      Paczka paczka1 = new Paczka(null, "Jola", 10000);
+       paczka1.setPriority();
         Paczka paczka2 = new Paczka();
+        Paczka paczka3 = null;
         System.out.println(paczka1);
         System.out.println(paczka2);
+        System.out.println(paczka3);
+        paczka3 = paczka1;
+        paczka3.setPriority();
+        System.out.println(paczka1);
+        System.out.println(paczka2);
+        System.out.println(paczka3);
+        System.out.println(paczka3.getPrice());
+
+        int liczba = 10;
+        incrementCounter(liczba);
+        System.out.println(liczba);
+    }
+
+
+    private static void incrementCounter(int liczba){
+        liczba++;
+        System.out.println(liczba);
     }
 }

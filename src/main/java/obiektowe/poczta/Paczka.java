@@ -11,7 +11,8 @@ public class Paczka {
     private String nadawca;
     private String odbiorca;
     private int wagaWGramach;
-    private boolean priorytetowa = false;
+   private boolean priorytetowa = false;
+    private String status = "utworzona";
 
 //    Tworząc paczkę trzeba podać nadawcę, odbiorcę oraz jej wagę.
 
@@ -74,6 +75,9 @@ do 2 kg kosztuje 12 zł
         return price;
     }
 
+    public void setPriority() {
+        priorytetowa = true;
+    }
 
     @Override
     public String toString() {
@@ -83,6 +87,11 @@ do 2 kg kosztuje 12 zł
                 ", wagaWGramach=" + wagaWGramach +
                 ", priorytetowa=" + priorytetowa +
                 ", cena=" + getPrice() +
+                ", status=" + status +
                 '}';
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }
