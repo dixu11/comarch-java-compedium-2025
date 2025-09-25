@@ -21,12 +21,12 @@ public class Main {
         System.out.println("-----");
         franek.nakarmZwierzeV2(slon);
         franek.nakarmZwierzeV2(zyrafa);
-        franek.nakarmZwierzeV2(new Kon());
+        franek.nakarmZwierzeV2(new Kon("Zbychu"));
         System.out.println("------");
 
         //polimorfizm przeniesienie implementacji na typ.
         // ta sama zmienna z ta sama metoda zachowuje sie różnie zależnie od typu
-        Zwierze zwierze = new Kon();
+        Zwierze zwierze = new Kon("Milka");
         zwierze.wydajDzwiek();
         zwierze = new Zyrafa();
         zwierze.wydajDzwiek();
