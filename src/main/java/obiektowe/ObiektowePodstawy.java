@@ -38,5 +38,10 @@ public class ObiektowePodstawy {
         }
 
         System.out.println("Łączna cena wynosi: " + sumaCeny);
+
+
+
+
+
     }
 }
