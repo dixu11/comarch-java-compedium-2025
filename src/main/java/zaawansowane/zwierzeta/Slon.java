@@ -1,6 +1,6 @@
 package zaawansowane.zwierzeta;
 
-public class Slon extends Zwierze {
+public class Slon extends Zwierze implements Roslinozerca,Dzikie {
 
     private int dlugoscTromby;
 
@@ -30,5 +30,20 @@ public class Slon extends Zwierze {
     public void jedz() {
         super.jedz(); // mogę wywołac wersję ze Zwierze
         System.out.println("Słoń je nisko wiszące liście");
+    }
+
+    @Override
+    public void wypuscNaSafari() {
+
+    }
+
+    @Override
+    public void jedzLiscie() {
+
+    }
+
+    @Override
+    public void biegaj() {
+
     }
 }

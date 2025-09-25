@@ -30,6 +30,6 @@ public class Main {
         zwierze.wydajDzwiek();
         zwierze = new Zyrafa();
         zwierze.wydajDzwiek();
-
     }
+
 }
