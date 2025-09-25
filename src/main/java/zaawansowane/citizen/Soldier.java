@@ -1,4 +1,4 @@
-package obiektowe.citizen;
+package zaawansowane.citizen;
 
 public class Soldier extends Citizen{
 

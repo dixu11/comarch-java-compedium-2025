@@ -1,4 +1,4 @@
-package obiektowe.citizen;
+package zaawansowane.citizen;
 
 import java.util.ArrayList;
 import java.util.List;

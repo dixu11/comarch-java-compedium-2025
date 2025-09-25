@@ -1,4 +1,4 @@
-package obiektowe.citizen;
+package zaawansowane.citizen;
 
 /*
 * Stwórz klasę abstrakcyjną Citizen oraz klasy dziedziczące:

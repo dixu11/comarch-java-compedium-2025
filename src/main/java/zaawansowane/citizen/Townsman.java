@@ -1,4 +1,4 @@
-package obiektowe.citizen;
+package zaawansowane.citizen;
 
 public class Townsman extends Citizen{
 
