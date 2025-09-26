@@ -1,5 +1,11 @@
 package zaawansowane.funkcyjne;
 
+import java.util.function.BinaryOperator;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Supplier;
+
+// interfejs funkcyjny - tylko jedna metoda abstrakcyjna
 interface ActionListener{
     void clickAction();
 }
@@ -37,16 +43,16 @@ public class FunkcyjneDemo {
             }
         };
 
-        ActionListener akcja2 = new ActionListener(){
-            @Override
-            public void clickAction() {
-                System.out.println("Zamknij");
-            }
-        };
-        button1.setAction(akcja1);
-        button2.setAction(akcja2);
+       // ActionListener akcja2 = () -> System.out.println("Zamknij");
+
+
+       // button1.setAction(akcja1);
+        button1.setAction(() -> System.out.println("Start"));
+        button2.setAction(() -> System.out.println("Zamknij"));
         button1.click();
         button2.click();
+
+
 
 
 
