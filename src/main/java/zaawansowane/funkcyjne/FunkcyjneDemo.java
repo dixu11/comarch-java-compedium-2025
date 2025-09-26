@@ -1,5 +1,7 @@
 package zaawansowane.funkcyjne;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
 import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -34,6 +36,7 @@ public class FunkcyjneDemo {
 
     public static void main(String[] args) {
 
+        //Sposób IV współczesny - wyrazenia lambda i interfejsy funkcyjne
         Button button1 = new Button("Start");
         Button button2 = new Button("Koniec");
         ActionListener akcja1 = new ActionListener(){
@@ -43,6 +46,7 @@ public class FunkcyjneDemo {
             }
         };
 
+        //powyższy kod zredukowany do wyrażenia lambda
        // ActionListener akcja2 = () -> System.out.println("Zamknij");
 
 
