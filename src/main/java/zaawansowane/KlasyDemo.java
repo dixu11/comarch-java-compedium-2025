@@ -44,6 +44,7 @@ public class KlasyDemo {
             public double calculateYearlySalary() {
                 return salary * 13;
             }
+
         };
 
 
